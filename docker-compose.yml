@@ -1,0 +1,17 @@
+version: '3.3'
+services:
+
+  
+
+  redis:
+    image: redis
+    command:
+      - 'redis-server'
+      - '--maxmemory ${REDIS_MAXMEM:-1024mb}'
+      - '--maxmemory-policy ${REDIS_POLICY:-noeviction}'
+      - '--requirepass simple'
+      - '--notify-keyspace-events Egx'
+    volumes:
+      - ./storage/redis/data:/data
+    ports:
+      - "6379:6379"
