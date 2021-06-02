@@ -41,11 +41,11 @@ class App1 {
             ws.send(JSON.stringify({active_clients: active_clients}));
 
             if (active_clients > 5) {
-                ws.close();
+                ws.close();``
                 return;
             }
 
-            this.add_connection(ws);
+            this.add(ws);
 
         });
 
