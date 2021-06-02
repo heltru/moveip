@@ -4,7 +4,7 @@ const WebSocketServer = new require('ws');
 class App1 {
 
 
-    add_connection(connection) {
+    add(connection) {
 
         let id = new Date().getTime();
         this.connections[id] = connection;
