@@ -1,7 +1,7 @@
 const WebSocketServer = new require('ws');
 
 
-class App1 {
+class App {
 
 
     add(connection) {
@@ -41,7 +41,7 @@ class App1 {
             ws.send(JSON.stringify({active_clients: active_clients}));
 
             if (active_clients > 5) {
-                ws.close();``
+                ws.close();
                 return;
             }
 
@@ -55,4 +55,4 @@ class App1 {
 
 }
 
-let test = new App1();
+let test = new App();
