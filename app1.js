@@ -1,7 +1,7 @@
 const WebSocketServer = new require('ws');
 
 
-class App {
+class App1 {
 
 
     add_connection(connection) {
@@ -55,4 +55,4 @@ class App {
 
 }
 
-let test = new App();
+let test = new App1();
