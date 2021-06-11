@@ -1,0 +1,16 @@
+{
+    "remote": [
+        {
+            "host": "127.0.0.1",
+            "port": 6379,
+            "password": "simple"
+        }
+    ],
+    "server": [
+        {
+            "host": "127.0.0.1",
+            "port": 6379,
+            "password": "simple"
+        }
+    ]
+}

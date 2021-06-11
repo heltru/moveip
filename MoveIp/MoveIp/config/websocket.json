@@ -1,0 +1,16 @@
+{
+    "remote": [
+        {
+            "host": "localhost",
+            "port": 9000,
+            "protocol": "tcp"
+        }
+    ],
+    "server": [
+        {
+            "host": "127.0.0.1",
+            "port": 1234,
+            "protocol": "tcp"
+        }
+    ]
+}
