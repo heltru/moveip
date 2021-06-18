@@ -26,6 +26,8 @@ class Websocket
         if (!$socket) {
             throw new \Exception($errstr,$errno);
         }
+        echo print_r($socket,1);
+        echo "create socket<br>";
         while (true) {
             //формируем массив прослушиваемых сокетов:
             $read = self::$connects;

@@ -10,7 +10,7 @@
             function wsStart() {
 
 
-                var conn = new WebSocket('ws://0.0.0.0:9000');
+                var conn = new WebSocket('ws://127.0.0.1:8123');
                 conn.onmessage = function (e) {
                     console.log(e.data);
                     $("#chat").append("<p>" + e.data + "</p>");
