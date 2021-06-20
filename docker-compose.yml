@@ -1,13 +1,13 @@
 version: '3.3'
 services:
 
-    web1:
+    web-websocket:
       image: nginx:latest
       ports:
         - "8123:80"
       volumes:
         - ./docker/nginx/nginx.conf:/etc/nginx/nginx.conf
-        - ./docker/nginx/sites-available1:/etc/nginx/sites-available
+        - ./docker/nginx/websocket:/etc/nginx/sites-available
         - ./docker/nginx/conf.d:/etc/nginx/conf.d
         - ./Moveip:/var/www/moveip.ru
       depends_on:
@@ -15,7 +15,7 @@ services:
       links:
         - php-fpm
       networks:
-        - exosuite-network
+        - moveip-network
 
     web:
       image: nginx:latest
@@ -31,14 +31,14 @@ services:
       links:
         - php-fpm
       networks:
-        - exosuite-network
+        - moveip-network
 
     docker-host:
       image: qoomon/docker-host
       cap_add: [ 'NET_ADMIN', 'NET_RAW' ]
       restart: on-failure
       networks:
-        - exosuite-network
+        - moveip-network
 
 
 
@@ -57,7 +57,7 @@ services:
       links:
         - php-fpm
       networks:
-        - exosuite-network
+        - moveip-network
 
 
 
@@ -78,43 +78,8 @@ services:
       expose:
         - "5500"
       networks:
-        - exosuite-network
+        - moveip-network
 
 networks:
-  exosuite-network:
+  moveip-network:
     driver: bridge
-
-#    php-fpm-ws:
-#      environment:
-#        ENVIRONMENT: "local"
-#      volumes:
-#        - ./docker/php/php.ini:/usr/local/etc/php/php.ini
-#        - ./Moveip:/var/www/moveip.ru
-#      build:
-#        context: ./docker/docker-php-fpm
-#      ports:
-#        - "9001:9000"
-#      depends_on:
-#        - docker-host
-#      command: "php /var/www/moveip.ru/Moveip/main.php"
-
-
-
-
-#  nginx:
-#    image: nginx
-#    ports:
-#      - 4400:80
-#    volumes:
-#      - ./docker/nginx/conf/custom.conf:/etc/nginx/conf.d/default.conf
-#      #      - ./docker/php/php.ini:/usr/local/etc/php/php.ini
-#      - ./Moveip:/var/www/moveip.ru
-#
-#  php:
-#    build:
-#      context: ./docker/php
-#
-#    volumes:
-#      - ./Moveip:/var/www/moveip.ru
-#    ports:
-#      - 5000:5000

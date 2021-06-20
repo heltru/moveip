@@ -2,18 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35296936-fe01-4aff-899d-42bf962380df" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/MoveIp/Test.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/docker-php-fpm/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/docker-php-fpm/php.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/nginx/conf/custom.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/nginx/sites-available1/moveip.conf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MoveIp/MoveIp/Core/Websocket.php" beforeDir="false" afterPath="$PROJECT_DIR$/MoveIp/MoveIp/Core/Websocket.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MoveIp/MoveIp/config/websocket.json" beforeDir="false" afterPath="$PROJECT_DIR$/MoveIp/MoveIp/config/websocket.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MoveIp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/MoveIp/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MoveIp/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/MoveIp/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MoveIp/MoveIp/config/redis.json" beforeDir="false" afterPath="$PROJECT_DIR$/MoveIp/MoveIp/config/redis.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/docker-php-fpm/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/docker-php-fpm/php.ini" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/nginx/sites-available/moveip.conf" beforeDir="false" afterPath="$PROJECT_DIR$/docker/nginx/sites-available/moveip.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/nginx/sites-available1/moveip.conf" beforeDir="false" afterPath="$PROJECT_DIR$/docker/nginx/websocket/moveip.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/redis/data/dump.rdb" beforeDir="false" afterPath="$PROJECT_DIR$/storage/redis/data/dump.rdb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,12 +82,12 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="docker-compose.yml.php: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+    <configuration name="docker-compose.yml.web-websocket: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
           <option name="services">
             <list>
-              <option value="php" />
+              <option value="web-websocket" />
             </list>
           </option>
           <option name="sourceFilePath" value="docker-compose.yml" />
@@ -128,10 +124,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.web-websocket: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.web1: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.web: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.nginx: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose.yml.php: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
@@ -143,7 +139,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1623365965890</updated>
-      <workItem from="1623365968365" duration="19150000" />
+      <workItem from="1623365968365" duration="23092000" />
     </task>
     <servers />
   </component>
