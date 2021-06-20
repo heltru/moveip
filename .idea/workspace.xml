@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35296936-fe01-4aff-899d-42bf962380df" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/MoveIp/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MoveIp/MoveIp/config/redis.json" beforeDir="false" afterPath="$PROJECT_DIR$/MoveIp/MoveIp/config/redis.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MoveIp/MoveIp/config/const.php" beforeDir="false" afterPath="$PROJECT_DIR$/MoveIp/MoveIp/config/const.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/docker-php-fpm/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/docker-php-fpm/php.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/nginx/sites-available/moveip.conf" beforeDir="false" afterPath="$PROJECT_DIR$/docker/nginx/sites-available/moveip.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/nginx/sites-available1/moveip.conf" beforeDir="false" afterPath="$PROJECT_DIR$/docker/nginx/websocket/moveip.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/redis/data/dump.rdb" beforeDir="false" afterPath="$PROJECT_DIR$/storage/redis/data/dump.rdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/nginx/websocket/moveip.conf" beforeDir="false" afterPath="$PROJECT_DIR$/docker/nginx/websocket/moveip.conf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +137,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1623365965890</updated>
-      <workItem from="1623365968365" duration="23092000" />
+      <workItem from="1623365968365" duration="25672000" />
     </task>
     <servers />
   </component>

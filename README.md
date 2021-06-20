@@ -21,3 +21,10 @@
 127.0.0.1 moveip.loc
 127.0.0.1 redis
 ```
+
+**Использование**
+---
+
+
+1. 1
+    * Внутри контейнера `php-fpm` --> `cd ../../; cd www/moveip.ru; php main.php`
